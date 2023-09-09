@@ -5,6 +5,22 @@ export const config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
+    autoCompileOpts: {
+        babelOpts: {
+            presets: [
+                [
+                    '@babel/preset-env',
+                    {
+                        targets: {
+                            node: '18'
+                        }
+                    }
+                ]
+            ],
+            plugins: [],
+            ignore: []
+        }
+    },
     //
     // ==================
     // Specify Test Files
