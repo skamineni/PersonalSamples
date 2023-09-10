@@ -1,5 +1,6 @@
 {
-  "name": "my-new-project",
+  "name": "my-new-wdio-project",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.22.15",

@@ -1,10 +1,10 @@
 {
-  "name": "my-new-project",
+  "name": "test-utils",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.22.15",
-    "@babel/register": "^7.22.15",
-    "@wdio/cli": "^8.16.6"
+    "@babel/register": "^7.22.15"
   },
   "scripts": {
     "wdio": "../node_modules/.bin/wdio run ./wdio.conf.js"
