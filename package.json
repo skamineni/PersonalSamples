@@ -1,0 +1,19 @@
+{
+  "name": "my-new-project",
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/register": "^7.22.15",
+    "@wdio/cli": "^8.16.6",
+    "@wdio/jasmine-framework": "^8.16.6",
+    "@wdio/local-runner": "^8.16.6",
+    "@wdio/sauce-service": "^8.16.6",
+    "@wdio/spec-reporter": "^8.16.3"
+  },
+  "scripts": {
+    "wdio": "../node_modules/.bin/wdio run ./wdio.conf.js"
+  },
+  "dependencies": {
+    "@wdio/globals": "^8.16.6"
+  }
+}
