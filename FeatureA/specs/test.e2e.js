@@ -1,4 +1,3 @@
-import { expect } from '@wdio/globals'
 import LoginPage from '../pageobjects/login.page.js'
 const SecurePage = require('../pageobjects/secure.page')
 
@@ -7,8 +6,9 @@ describe('My Login application', () => {
         await LoginPage.open()
 
         await LoginPage.login('tomsmith', 'SuperSecretPassword!')
-        await expect(SecurePage.flashAlert).toBeExisting()
-        await expect(SecurePage.flashAlert).toHaveTextContaining(
+        let flashAlert = await SecurePage.flashAlert
+        await expect(await flashAlert.isDisplayed()).toBe(true)
+        await expect(await flashAlert.getText()).toContain(
             'You logged into a secure area!')
     })
 })

@@ -15,6 +15,7 @@
     "wdio": "../node_modules/.bin/wdio run ./wdio.conf.js"
   },
   "dependencies": {
-    "@wdio/globals": "^8.16.6"
+    "@wdio/globals": "^8.16.6",
+    "require": "2.4.20"
   }
 }
